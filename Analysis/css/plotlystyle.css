@@ -1,0 +1,26 @@
+body {
+    background-image: url("../css/background.jpeg"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+    
+    background-color: #343a40;
+    font-size: 10px;
+
+    
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 8px 8px 10px #0000008c;
+}
+p {
+    color:white;
+    text-transform: capitalize;
+    font-size: 20px;
+    
+}
+
+.jumbotron {
+    background-image: url("culture.jpeg"); 
+    background-size: 100% 100%;
+    text-align: center;
+    
+  }
