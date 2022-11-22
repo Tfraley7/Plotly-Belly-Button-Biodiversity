@@ -6,10 +6,16 @@ body {
 
     
 }
-h1 {
+.jumbotron {
+    background-image: url("../css/culture.jpeg"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+    background-size: 100% 100%;
+    text-align: center;
+    
+  }
+h2 {
     color: white;
     font-size: 50px;
-    text-shadow: 8px 8px 10px #0000008c;
+    /* text-shadow: 8px 8px 10px #0000008c; */
 }
 p {
     color:white;
@@ -18,9 +24,4 @@ p {
     
 }
 
-.jumbotron {
-    background-image: url("culture.jpeg"); 
-    background-size: 100% 100%;
-    text-align: center;
-    
-  }
+
