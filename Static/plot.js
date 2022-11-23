@@ -3,7 +3,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("./Data/samples.json").then((data) => {
+  d3.json("samples.json").then((data) => {
     console.log(data);
     var sampleNames = data.names;
     sampleNames.forEach((sample) => {
@@ -12,6 +12,9 @@ function init() {
         .text(sample)
         .property("value", sample);
     });
+    const firstSample=sampleNames[0];
+    buildCharts(firstSample);
+    buildMetadata(firstSample);
 })};
 //Initialize the dashboard
 init();
@@ -105,6 +108,9 @@ function buildCharts(sample) {
     var bubbleLayout = {
       
     };
+
+// When the dashboard is first opened in a browser, ID 940’s data should be displayed in the dashboard, and the three charts should be working according to their requirements.
+ 
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot(); 
